@@ -40,7 +40,7 @@ try {
   }
 }
 
-client.login('NjY4MjMxMDMyMjAxNTQzNjg0.XiOX0Q.lOyQrbfYVJdrvBEfcOLKYDhjDA8');
+client.login(process.env.BOT_TOKEN);
 client.once('ready', function () {
   console.log('Ready!');
 });
