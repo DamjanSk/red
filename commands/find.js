@@ -1,76 +1,146 @@
-import { data } from './data';
-import { RichEmbed, Attachment } from 'discord.js';
+"use strict";
+
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.refreshMessage = void 0;
+
+var _toConsumableArray2 = _interopRequireDefault(require("@babel/runtime/helpers/toConsumableArray"));
+
+var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
+
+var _asyncToGenerator2 = _interopRequireDefault(require("@babel/runtime/helpers/asyncToGenerator"));
+
+var _data = require("./data");
+
+var _discord = require("discord.js");
 
 module.exports = {
-    name: 'find',
-    description: 'Command for searching or filtering heroes.',
-    execute(message, args) {
-        message.channel.send('Processing...').then(async message => {
+  name: 'find',
+  description: 'Command for searching or filtering heroes.',
+  execute: function execute(message, args) {
+    message.channel.send('Processing...').then(
+    /*#__PURE__*/
+    function () {
+      var _ref = (0, _asyncToGenerator2["default"])(
+      /*#__PURE__*/
+      _regenerator["default"].mark(function _callee(message) {
+        var collector;
+        return _regenerator["default"].wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                // Setup global data.
+                _data.data.find.message = message;
+                _data.data.find.keywords = args;
+                _data.data.find.page = 0;
+                refreshMessage(); // Create reactions.
 
-            // Setup global data.
-            data.find.message = message;
-            data.find.keywords = args;
-            data.find.page = 0;
-            refreshMessage();
+                _context.next = 6;
+                return message.react('⬅️');
 
-            // Create reactions.
-            await message.react('⬅️');
-            await message.react('➡️');
+              case 6:
+                _context.next = 8;
+                return message.react('➡️');
 
-            // Wait for new reactions.
-            const collector = message.createReactionCollector(
-                (reaction, user) => ['⬅️', '➡️'].includes(reaction.emoji.name) && user.id !== data.selfId,
-                { time: 3600000 }
-            );
+              case 8:
+                // Wait for new reactions.
+                collector = message.createReactionCollector(function (reaction, user) {
+                  return ['⬅️', '➡️'].includes(reaction.emoji.name) && user.id !== _data.data.selfId;
+                }, {
+                  time: 3600000
+                });
+                collector.on('collect', function (reaction) {
+                  // Switch page.
+                  switch (reaction.emoji.name) {
+                    case '⬅️':
+                      _data.data.find.page -= 1;
+                      break;
 
-            collector.on('collect', reaction => {
-                // Switch page.
-                switch(reaction.emoji.name) {
-                    case '⬅️': data.find.page -= 1; break;
-                    case '➡️': data.find.page += 1; break;
-                }
-                refreshMessage();
+                    case '➡️':
+                      _data.data.find.page += 1;
+                      break;
+                  }
 
-                // Clear new reactions.
-                for (const user of reaction.users.values()) {
-                    user.id !== data.selfId && reaction.remove(user);
-                }
-            });
-        });
-    }
-}
+                  refreshMessage(); // Clear new reactions.
 
-export const refreshMessage = () => {
-    // Make a list of all heroes matching the keywords.
-    const results = data.heroes.filter(hero => data.find.keywords.every(keyword => 
-        [hero.name, ...hero.street_names, ...hero.traits].includes(keyword)
-    ));
+                  var _iteratorNormalCompletion = true;
+                  var _didIteratorError = false;
+                  var _iteratorError = undefined;
 
-    // Clamp page.
-    if (data.find.page < 0) data.find.page = 0;
-    if (data.find.page >= results.length) data.find.page = results.length - 1;
+                  try {
+                    for (var _iterator = reaction.users.values()[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                      var user = _step.value;
+                      user.id !== _data.data.selfId && reaction.remove(user);
+                    }
+                  } catch (err) {
+                    _didIteratorError = true;
+                    _iteratorError = err;
+                  } finally {
+                    try {
+                      if (!_iteratorNormalCompletion && _iterator["return"] != null) {
+                        _iterator["return"]();
+                      }
+                    } finally {
+                      if (_didIteratorError) {
+                        throw _iteratorError;
+                      }
+                    }
+                  }
+                });
 
-    const exampleEmbed = {
-        color: 0xEE1607,
-        title: 'Search results',
-        description: `${data.find.keywords.join(', ')}`,
-        fields: [
-            {
-                name: `Showing ${data.find.page + 1}/${results.length}`,
-                value: results
-                    .sort((hero1, hero2) => hero1.traits[0].localeCompare(hero2.traits[0]))
-                    .map((hero, index) => `${index === data.find.page ? '▫️' : '▪️'} ${data.colors[hero.traits[0]]} ${hero.name}`)
-                    .join('\n'),
+              case 10:
+              case "end":
+                return _context.stop();
             }
-        ],
-        image: {
-            url: results[data.find.page].url,
-        },
-        timestamp: new Date(),
-        footer: {
-            text: 'Use the reactions to switch.'
-        },
-    };
+          }
+        }, _callee);
+      }));
 
-    data.find.message.edit({ embed: exampleEmbed });
-}
+      return function (_x) {
+        return _ref.apply(this, arguments);
+      };
+    }());
+  }
+};
+
+var refreshMessage = function refreshMessage() {
+  // Make a list of all heroes matching the keywords.
+  var results = _data.data.heroes.filter(function (hero) {
+    return _data.data.find.keywords.every(function (keyword) {
+      return [hero.name].concat((0, _toConsumableArray2["default"])(hero.street_names), (0, _toConsumableArray2["default"])(hero.traits)).includes(keyword);
+    });
+  }); // Clamp page.
+
+
+  if (_data.data.find.page < 0) _data.data.find.page = 0;
+  if (_data.data.find.page >= results.length) _data.data.find.page = results.length - 1;
+  var exampleEmbed = {
+    color: 0xEE1607,
+    title: 'Search results',
+    description: "".concat(_data.data.find.keywords.join(', ')),
+    fields: [{
+      name: "Showing ".concat(_data.data.find.page + 1, "/").concat(results.length),
+      value: results.sort(function (hero1, hero2) {
+        return hero1.traits[0].localeCompare(hero2.traits[0]);
+      }).map(function (hero, index) {
+        return "".concat(index === _data.data.find.page ? '▫️' : '▪️', " ").concat(_data.data.colors[hero.traits[0]], " ").concat(hero.name);
+      }).join('\n')
+    }],
+    image: {
+      url: results[_data.data.find.page].url
+    },
+    timestamp: new Date(),
+    footer: {
+      text: 'Use the reactions to switch.'
+    }
+  };
+
+  _data.data.find.message.edit({
+    embed: exampleEmbed
+  });
+};
+
+exports.refreshMessage = refreshMessage;
