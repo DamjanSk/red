@@ -12,12 +12,14 @@
 //     client.commands.set(command.name, command);
 // }
 
-// Lifecycle.
-client.login(process.env.BOT_TOKEN);
+console.log('a');
 
-client.once('ready', () => {
-    console.log('Ready!');
-});
+// Lifecycle.
+// client.login(process.env.BOT_TOKEN);
+
+// client.once('ready', () => {
+//     console.log('Ready!');
+// });
 
 // client.on('message', message => {
 //     // Make sure it starts with '!' and author isn't a bot.
