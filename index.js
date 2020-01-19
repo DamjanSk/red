@@ -2,7 +2,7 @@
 // import { readdirSync } from 'fs';
 // import { data } from './commands/data.js'
 
-const client = new Client();
+// const client = new Client();
 
 // Load commands.
 // const commandFiles = readdirSync('./commands').filter(file => file.endsWith('.js'));
