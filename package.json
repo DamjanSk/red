@@ -21,5 +21,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log",
     "start": "npm run build && node dist/index.js"
+  },
+  "engines": {
+    "node": "12.14.0"
   }
 }
