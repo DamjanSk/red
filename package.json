@@ -6,16 +6,16 @@
   "type": "module",
   "author": "Damjan Najdov",
   "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.8.3",
-    "@babel/plugin-transform-runtime": "^7.8.3",
-    "@babel/preset-env": "^7.0.0"
-  },
-  "dependencies": {
-    "@babel/cli": "^7.0.0",
-    "@babel/runtime": "^7.8.3",
-    "discord.js": "^11.5.1"
-  },
+  // "devDependencies": {
+  //   "@babel/core": "^7.8.3",
+  //   "@babel/plugin-transform-runtime": "^7.8.3",
+  //   "@babel/preset-env": "^7.0.0"
+  // },
+  // "dependencies": {
+  //   "@babel/cli": "^7.0.0",
+  //   "@babel/runtime": "^7.8.3",
+  //   "discord.js": "^11.5.1"
+  // },
   "engines": {
     "node": "12.14.0"
   }

@@ -1,6 +1,6 @@
-import { Client, Collection } from 'discord.js';
-import { readdirSync } from 'fs';
-import { data } from './commands/data.js'
+// import { Client, Collection } from 'discord.js';
+// import { readdirSync } from 'fs';
+// import { data } from './commands/data.js'
 
 const client = new Client();
 
