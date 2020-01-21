@@ -10,7 +10,7 @@ var heroes = [{
     street_names: ['red', 'virus', 'robot', 'proto'],
     traits: ['red', 'runesmith', 'mechanical'],
     active: ['Delete', 'Select an orb, destroy all orbs with the same element'],
-    leader: 'On spell cast: Shield for 60% ➕.',
+    leader: 'On spell cast: Shield for 60%➕.',
     description: 'No.. Noo... NOOO!!!'
 },
 {
@@ -18,7 +18,7 @@ var heroes = [{
     url: 'https://www.dropbox.com/s/27e9uhuxsrmr4zd/corina.jpg?raw=1',
     street_names: ['queen', 'puppy', 'corina', 'ruff'],
     traits: ['red', 'slinger', 'maruu'],
-    active: ['Ruff Up', 'Attacks for 720% ⚔️ and applies Targeted. Skill resets on critical attack.\n\nTargeted enemy takes 200% damage from S heroes.'],
+    active: ['Ruff Up', 'Attacks for 720%⚔️ and applies Targeted. Skill resets on critical attack.\n\nTargeted enemy takes 200% damage from S heroes.'],
     leader: 'Leader: Maruu +35% Critical Chance (250%⚔️). Non-leader: Corina +35% Critical Chance (250%⚔️).',
     description: 'Ruff. Arff woof woof GRRRuuufff!'
 },
@@ -228,5 +228,122 @@ var heroes = [{
     active: ['Royal Link', 'Converts 2 orbs into explosive orb. Explodes when matched.\n2 uses per cooldown.'],
     leader: 'On 3 Explosions:\nElemental & Mechanical Attack x2.7',
     description: 'A sea of stone to shield from the Nameless.\nA dance of leaves to move the Earth.\nA sacrifice of soul to unbind Ubuntu.'
+},
+{
+    name: 'Aruza, Cracked Twin',
+    url: 'https://www.dropbox.com/s/0awnly0t0jsefto/aruza.jpg?raw=1',
+    street_names: ['aruza', 'cracked', 'twin', 'bubble', 'gun', 'swimmer'],
+    traits: ['green', 'tactician', 'elf'],
+    active: ['Finigun', 'Sprays 6 explosive bullets at an area.'],
+    leader: '🟢T Heroes: HP x2.2, Heal x1.35',
+    description: '"Hey Salty, your citadel is under attack (>3<)"'
+},
+{
+    name: 'Crusoe, The Pirate Imposter',
+    url: 'https://www.dropbox.com/s/koa3zueknzpdkk4/crusoe.jpg?raw=1',
+    street_names: ['crusoe', 'pirate', 'imposter', 'expedition', 'bait', 'driftling', 'scavenger'],
+    traits: ['blue', 'tactician', 'mechanical'],
+    active: ['Unreliable Defenses', '50% Chance to attack a random enemy for 209% damage.\n\n50% Chance to heal for 310% Heal.'],
+    leader: 'On spell cast:\nAll 🔵T heroes attack all for 1.7⚔️.',
+    description: 'Driftlings live in colonies atop the massive whale dragons. Adept scavengers by nature, most Driftlings live off scraps of their whole dragon hosts.'
+},
+{
+    name: 'DaDD., New Dawn',
+    url: 'https://www.dropbox.com/s/v3dy4gommxembfu/dadd.jpg?raw=1',
+    street_names: ['dadd', 'new', 'dawn', 'conservation', 'droid'],
+    traits: ['green', 'tactician', 'mechanical'],
+    active: ['Daddy Style', 'Converts shooter orb to a Bouncer.\n\nBounces 30 times, destroying Orbs it hits.'],
+    leader: 'When HP drops below 50%:\nAll 🟢T heroes attack all for 170%⚔️.',
+    description: 'Initiating Protocol New Dawn...\nError D_M__ Sequence Detected 303...\nSelf Recovery Attempt 7,020,332,158...\n--- Message Truncated ---'
+},
+{
+    name: 'Eon, Time Prodigy',
+    url: 'https://www.dropbox.com/s/2hko0euutgmx8k7/eon.jpg?raw=1',
+    street_names: ['eon', 'time', 'mage', 'prodigy'],
+    traits: ['green', 'slinger', 'elf'],
+    active: ['Recurse', 'Attack enemies 3 times. Deals 260% damage per hit.\n\nRefresh spell if you match 3 orbs in 3 sec.'],
+    leader: 'Match 3 Orbs in 3 sec. Elf Attack x2.7.',
+    description: 'The essence of time magic is one of balance. To move fast, one must first learn to move slowly.'
+},
+{
+    name: 'Estella, Orion Princess',
+    url: 'https://www.dropbox.com/s/yycsr56b2vekzqj/estella.jpg?raw=1',
+    street_names: ['estella', 'orion', 'princess', 'lady'],
+    traits: ['yellow', 'tactician', 'beast'],
+    active: ['Starfall', 'Converts shooter to Starfall Orb, which passes through up to 3🟢.\n\nConverts 2-4 adjacent orbs in a row to 🟡 when it passes a 🟢.'],
+    leader: 'Destroy 45 orbs in one turn:\nBeast and her sister Attack x2.7',
+    description: '"See that starry night and dancing lights? What is yours is forever mine."'
+},
+{
+    name: 'FrostFire Joy',
+    url: 'https://www.dropbox.com/s/t6zzk3aauxzo4m9/frostfire_joy.jpg?raw=1',
+    street_names: ['blue', 'joy', 'oddly', 'frostfire'],
+    traits: ['blue', 'slinger', 'maruu'],
+    active: ['Frost Burn', 'Attacks target for 710%⚔️.\nShields for 125%➕.'],
+    leader: 'Match 5🔵 or 🔵+🌈 to dispel Curse.',
+    description: 'How do you put out a fire? With an EXPLOSION of course!'
+},
+{
+    name: 'Ilyana, Sun Valkyrie',
+    url: 'https://www.dropbox.com/s/84rntjrfh0n9noz/ilyana.jpg?raw=1',
+    street_names: ['ilyana', 'sun', 'valkyrie', 'spear', 'sun\'s', 'spearmaiden'],
+    traits: ['yellow', 'slinger', 'elf'],
+    active: ['Piercing Shot', 'Converts shooter orb into a Piercing Shot.\n(Use per battle: 1)\n\nPiercing Shot destroys 16 orbs it touches.'],
+    leader: 'Elf Heroes: HP, Heal x1.60.',
+    description: 'The thrust of the Captain\'s spear always strikes true. She has only missed once, it wasn\'t reputation she lost that day.'
+},
+{
+    name: 'Momma, Bear-zerker',
+    url: 'https://www.dropbox.com/s/mtr2tz5mxnh6leu/momma.jpg?raw=1',
+    street_names: ['momma', 'bear', 'warden'],
+    traits: ['green', 'runesmith', 'elf', 'beast'],
+    active: ['Bear-zerk!', 'Attacks 3 times for 209% damage each.\n\n+1 attack when this hero Critical Attacks.'],
+    leader: 'Leader: Elf/Beast +35% Critical Chance for 250%⚔️.\n\nNon-Leader: Momma +35% Critical Chance for 250%⚔️.',
+    description: 'XOXOXXXX XOXXXXXO XOXXOOOX XOXXXOXX XOXXXXXO XOXXOOXO XOXXOOOO XOXXOOOX XOXXOXXO XOXOXOXO XOXXOOXO'
+},
+{
+    name: 'Nether, Pride Sin',
+    url: 'https://www.dropbox.com/s/jfl7cp3jgv5hvvw/nether.jpg?raw=1',
+    street_names: ['nether', 'pride', 'sin', 'reaper'],
+    traits: ['green', 'tactician', 'human', 'demon'],
+    active: ['Soul Sacrifice', 'Consumes 33% of player\'s max HP, ignores Shield.\n\nAttacks all enemies for 160% of HP consumed.'],
+    leader: 'When HP falls below 50%, drops 2-3 ❤️.\n\n5 turns cooldown.',
+    description: 'Vanagloria, Superbia, Ira. Eternal glory awaits those guided by these lights.'
+},
+{
+    name: 'Nightmare',
+    url: 'https://www.dropbox.com/s/n220sj9vxjmpq3f/nightmare.jpg?raw=1',
+    street_names: ['nightmare', 'twisted', 'edge', 'forsaken'],
+    traits: ['red', 'runesmith', 'demon'],
+    active: ['Onslaught', 'Attacks random enemies 3 times.\nDealing 260% damage per hit.\n\n+3 attacks if less than 50% HP.'],
+    leader: 'When Health < 50%,\nDemon Heroes Attack x2.0.',
+    description: 'The honorable "Twin Blade" of Milagard was the city\'s finest Spellsword and Queen\'s Guard of the lost expedition.'
+},
+{
+    name: 'Rue, The Collector',
+    url: 'https://www.dropbox.com/s/bhnzfqzz8yitjtw/rue.jpg?raw=1',
+    street_names: ['rue', 'collector', 'raven', 'witch', 'le', 'six'],
+    traits: ['blue', 'runesmith', 'human', 'beast'],
+    active: ['Soul Scythe', 'Converts all 🟢 in an area to 🔵.\n\nDispels Panic.'],
+    leader: 'Heal or Shield 2 times this turn:\nAll R heroes ⚔️x2.2',
+    description: '"There are only two types of men. Those I want to kill, and those I want to kill slowly."'
+},
+{
+    name: 'Tahoe, Plane Phaser',
+    url: 'https://www.dropbox.com/s/etb073boqg715et/tahoe.jpg?raw=1',
+    street_names: ['tahoe', 'plane', 'phaser', 'surfer'],
+    traits: ['blue', 'runesmith', 'human'],
+    active: ['Aerial 360', 'Converts shooter orb into an Aerial-360 Orb that passes through all orbs.\n\nTouch 🔵 to cause an explosion. Max 3-8 explosions.'],
+    leader: 'Match 7🔵 in one shot: 33% chance per Human to +1 shot next turn.',
+    description: '"Oi, surf\'s awesome today mate. Gotta catch a sick aerial through nether\'s drift."'
+},
+{
+    name: 'Yvette the Beautiful',
+    url: 'https://www.dropbox.com/s/hrdd6conyr4g9r3/yvette.jpg?raw=1',
+    street_names: ['yvette', 'the', 'beautiful', 'beauty', 'karadu', 'mimic'],
+    traits: ['green', 'slinger', 'elemental'],
+    active: ['Cannibalize', 'Destroys 🔴 in an area to heal 130% each. Dispels Blind.'],
+    leader: 'When Healed:\nDrops a x2.2 Attack Orb for every 2 Elemental.',
+    description: 'The mimics of Karadu is a species of deadly carnivorous plants.'
 }];
 exports.heroes = heroes;
