@@ -124,7 +124,7 @@ var heroes = [{
 {
     name: 'Arctic Lord',
     url: 'https://www.dropbox.com/s/c8cw53vg4km5j6w/arctic_lord.jpg?raw=1',
-    street_names: ['arctic', 'lord', 'sabertooth', 'alpha'],
+    street_names: ['arctic', 'lord', 'sabertooth', 'alpha', 'tiger'],
     traits: ['blue', 'slinger', 'beast'],
     active: ['Gushing Swipe', 'Attacks all enemies for 310% damage.\n\n+300% damage when player is less than 35% HP.'],
     leader: 'When Health < 35%.\nBeast Heroes Attack x2.7',
@@ -345,5 +345,150 @@ var heroes = [{
     active: ['Cannibalize', 'Destroys 🔴 in an area to heal 130% each. Dispels Blind.'],
     leader: 'When Healed:\nDrops a x2.2 Attack Orb for every 2 Elemental.',
     description: 'The mimics of Karadu is a species of deadly carnivorous plants.'
-}];
+},
+{
+    name: 'Arkgriff, Searing Night',
+    url: 'https://www.dropbox.com/s/ukxqdw18819v2eh/a1_arkgriff.jpg?raw=1',
+    street_names: ['arkgriff', 'searing', 'night', 'sinkaradu', 'griffin', 'karadu', 'panther'],
+    traits: ['red', 'runesmith', 'beast'],
+    active: ['Tropical Ambush', 'All 🔴🟢 units attack fo 260% damage.'],
+    leader: 'Beast Heroes: HP, Attack x1.60.',
+    description: 'Centuries ago, Karadu was a sprawling desert. The Ark\'s crash transformed the lands, sparking rapid evolutioins in the ecosystem.'
+},
+{
+    name: 'Bjorn, Ironfury',
+    url: 'https://www.dropbox.com/s/0f8obamq260hhjn/a1_bjorn.jpg?raw=1',
+    street_names: ['bjorn', 'ironfury', 'fury', 'grampa', 'beard', 'tree'],
+    traits: ['red', 'tactician', 'human'],
+    active: ['Ironfury', 'Smashes the lowest exterior orbs 2-4 times.\n\nDestroys 5 orbs per smash.'],
+    leader: 'Destroy 45 orbs in one turn:\nHuman Attack x2.6.',
+    description: '"Death is for the weak."'
+},
+{
+    name: 'Crow, Xzi\'s Fall',
+    url: 'https://www.dropbox.com/s/8qhgeza8aivo7p2/a1_crow.jpg?raw=1',
+    street_names: ['crow', 'xzi', 'wanted', 'the'],
+    traits: ['green', 'slinger', 'demon'],
+    active: ['Xzi\'s Fall', 'Deals 310.0% damage, ignores Defense.\n\nHeal to cast again, once per turn.'],
+    leader: 'Match 5🟢 or 🟢+🌈 to dispel Bleed.',
+    description: '"There is only one truth: Death."'
+},
+{
+    name: 'Enso, Master Artisan',
+    url: 'https://www.dropbox.com/s/e4vxu8d3h2dgche/a1_enso.jpg?raw=1',
+    street_names: ['enso', 'art', 'artisan', 'paint', 'painter', 'mage', 'paintsmith', 'master'],
+    traits: ['green', 'runesmith', 'maruu'],
+    active: ['Splash of Green', 'Choose an orb. Turn surrounding orbs to 🟢.'],
+    leader: 'Match 5+🟢 or 🟢+🌈 twice:\nMaruu Attack x3.2.',
+    description: 'These illusions are so real that her victims feel and hear the wolf\'s hot breath as it moves in for the kill.'
+},
+{
+    name: 'Excalibur, True Kingmaker',
+    url: 'https://www.dropbox.com/s/l4n77i0my9fo6pk/a1_excalibur.jpg?raw=1',
+    street_names: ['excalibur', 'king', 'kingmaker', 'true'],
+    traits: ['blue', 'runesmith', 'elemental'],
+    active: ['Rise of Camelot', 'Slashes upwards from the lowest orb, destroying 10-14 orbs.'],
+    leader: 'Elemental Heroes: ⚔️❤️➕ x1.55. When shielded, ⚔️ increased to x2.10.',
+    description: '"Whoso pulleth out this sword from this stone, is right wise king born of Camelot.'
+},
+{
+    name: 'Gaia, Warden of the East',
+    url: 'https://www.dropbox.com/s/yv7ab4hobys8bca/a1_gaia.jpg?raw=1',
+    street_names: ['gaia', 'warden', 'pineheart', 'ranger', 'archer', 'blind'],
+    traits: ['green', 'runesmith', 'elf'],
+    active: ['Scatter Shot', 'Convert shooter orb into Scatter Shot, which destroys surrounding orbs.\n\nSplits into 5 Scatter Shots upon wall bounce.'],
+    leader: 'Elf Heroes: HP, Attack x1.60.',
+    description: 'Watcher of the Pineheart Grove. She sees through her many furry friends.'
+},
+{
+    name: 'Ilyana, Pride Sin',
+    url: 'https://www.dropbox.com/s/sm7rqz3xjeohi3v/a1_ilyana_pride_sin.jpg?raw=1',
+    street_names: ['ilyana', 'dark', 'evil', 'pride', 'sin', 'eclipsed'],
+    traits: ['red', 'runesmith', 'demon'],
+    active: ['Eclipse', 'Converts shooter to pass-through Eclipse orb. Eclipse converts 4-7🔵🟢 to 🔴.'],
+    leader: 'Convert a shooter Orb:\n25% chance per Demon to gain +1 shot next turn.',
+    description: 'The thrust of the Captain\'s spear always strikes true. She has only missed once, it wasn\'t reputation she lost that day.'
+},
+{
+    name: 'Kakura, Se\'ker\'s Seal',
+    url: 'https://www.dropbox.com/s/6mqh00fbyy7n4kg/a1_kakura.jpg?raw=1',
+    street_names: ['kakura', 'drake', 'seal', 'se\'ker', 'desert'],
+    traits: ['yellow', 'runesmith', 'dragon'],
+    active: ['Sand Storm', 'Destroys 🟢🔵 in an area to attack.\n\nDeals 190% damage per Orb destroyed. Ignores defense.'],
+    leader: 'Match 5🟡 or 🟡+🌈 to dispel Enrage.',
+    description: '"Kakura\'s rage will one day consume the Shimmering Plains.'
+},
+{
+    name: 'Kayla, Eternal Queen',
+    url: 'https://www.dropbox.com/s/u8nvp2kfyyeu7uv/a1_kayla.jpg?raw=1',
+    street_names: ['kayla', 'eternal', 'queen', 'frost', 'princess', 'iceborn', 'ice'],
+    traits: ['blue', 'tactician', 'demon'],
+    active: ['Queen\'s Command', 'Converts 6 leftmost 🟡 to 🔵.'],
+    leader: 'When Heal or Shield:\n25% chance to convert shooter to 🌈',
+    description: '"What\'s this I\'m hearing? Is that your heartbeat? Oops... It just stopped."'
+},
+{
+    name: 'Kraken, Abyssal Legend',
+    url: 'https://www.dropbox.com/s/gsijqdet79jfxus/a1_kraken.jpg?raw=1',
+    street_names: ['kraken', 'abyssal', 'legend', 'lurker', 'shiest'],
+    traits: ['blue', 'tactician', 'dragon'],
+    active: ['Poison', 'Poisons enemies for 3 turns.\n\nDeals 310% damage (ignores defense) per turn.'],
+    leader: 'Dragon Heroes: HP, Attack x1.60',
+    description: 'The Saki\'ra pirates fear no gods. But even they make sacrifices to appease what lies beneath.'
+},
+{
+    name: 'Majula, Eye of Kradonia',
+    url: 'https://www.dropbox.com/s/xhytcb18zdtdx1s/a1_majula.jpg?raw=1',
+    street_names: ['majula', 'eye', 'kradonia', 'of', 'kraken', 'tentacles', ],
+    traits: ['blue', 'slinger', 'demon'],
+    active: ['Catch of the Day', 'A giant wriggling tentacle raises from the ocean to destroy all orbs in its path.\n\nTentacle +10% size per Demon.'],
+    leader: 'Match 5🔵 or 🔵+🌈 to dispel Bleed.',
+    description: '"A crewless ship crashed into Kradonia. The captain\'s log about a beautiful stowaway may be our only clue..."'
+},
+{
+    name: 'Mikhail, Titan Spine Chieftain',
+    url: 'https://www.dropbox.com/s/32ji5kxn5n48tfi/a1_mikhail.jpg?raw=1',
+    street_names: ['mikhail', 'spine', 'chieftain', 'wyvern', 'wyvern\'s', 'bane', 'dune', 'hunter'],
+    traits: ['yellow', 'slinger', 'human'],
+    active: ['Berserker\'s Rage', 'Consumes 33% of player\'s max HP, ignores Shield.\n\nAttacks all enemies for 160% of HP consumed.'],
+    leader: 'When you match 5 or more 🟡:\n50% chance to spawn ❤️.',
+    description: 'The pleasure is in the hunt.'
+},
+{
+    name: 'Elder of Saki\'ra Isles',
+    url: 'https://www.dropbox.com/s/yt4iuwuqsp60dkr/a1_time_mage.jpg?raw=1',
+    street_names: ['elder', 'of', 'saki\'ra', 'isles', 'time', 'prodigy', 'mage'],
+    traits: ['blue', 'slinger', 'elf'],
+    active: ['Time Stop', 'Fires up to 8 Orbs in 10.0 sec.'],
+    leader: 'Wall bounce > 4 times, all Elf Attack x2.7.',
+    description: 'The essence of time magic is one of balance. To move fast, one must first learn to move slowly.'
+},
+{
+    name: 'Tiny Xord, AstroMax',
+    url: 'https://www.dropbox.com/s/e2iztip6x7elkry/a1_tiny_xord.jpg?raw=1',
+    street_names: ['tiny', 'xord', 'astramax', 'astra', 'transformer', 'transformers'],
+    traits: ['red', 'runesmith', 'mechanical'],
+    active: ['Giant Breach', 'Attacks 3 times. Deals 190%⚔️ and adds Breach (+10% Spell Damage taken) per hit.\n\nSpell Transforms when this hero crits twice.'],
+    leader: 'Leader: Mechanical/Tiny Giants +35% Critical Chance for 250%⚔️.\n\nNon-Leader: Tiny Xord +35% Critical Chance for 250%⚔️.',
+    description: '"Too strong he is, NinjaXord we must!"'
+},
+{
+    name: 'Twilight Mist',
+    url: 'https://www.dropbox.com/s/6r33t470r7zq619/a1_twilight_mist.jpg?raw=1',
+    street_names: ['twilight', 'mist', 'stalker', 'mistwalker'],
+    traits: ['blue', 'slinger', 'maruu'],
+    active: ['Line Burster', 'Turns the shooter orb into a Line Burster.\n\nLine Burster destroys 8 orbs in a row.'],
+    leader: 'Maruu Heroes: HP, Attack x1.60',
+    description: 'The mists have teeth in Twilight Valley'
+},
+{
+    name: 'Yvette, Blood Rose',
+    url: 'https://www.dropbox.com/s/z5x9kd9fm7d5app/a1_yvette.jpg?raw=1',
+    street_names: ['yvette', 'blood', 'rose', 'mimic', 'flower'],
+    traits: ['red', 'tactician', 'elemental'],
+    active: ['Hydration', 'Destroys 🟢 in an area. Shields for 100%➕ per destroyed orb.'],
+    leader: 'Match 5+ 🔴:\nDrops a 120% Heal Orb for every 2 Elemental.',
+    description: 'The mimics of Karadu is a species of deadly carnivorous plants.'
+}
+];
 exports.heroes = heroes;
