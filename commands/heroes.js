@@ -489,6 +489,150 @@ var heroes = [{
     active: ['Hydration', 'Destroys 🟢 in an area. Shields for 100%➕ per destroyed orb.'],
     leader: 'Match 5+ 🔴:\nDrops a 120% Heal Orb for every 2 Elemental.',
     description: 'The mimics of Karadu is a species of deadly carnivorous plants.'
+},
+{
+    name: 'Captain Aurora',
+    url: 'https://www.dropbox.com/s/kn6avab34htul1p/a1_aurora.jpg?raw=1',
+    street_names: [],
+    traits: ['red', 'tactician', 'human'],
+    active: ['Flaming Lash', 'Converts a row of 3 Bubbles to 🔴.'],
+    leader: 'Match 5+ 🔴 or 🔴+🌈 twice:\n🔴T Attack x3.2.',
+    description: 'The Vulian skies belong to the Dragons and the Aurora Pirates.'
+},
+{
+    name: 'Robin, Master Thief',
+    url: 'https://www.dropbox.com/s/d7qhbhbc5mhlhux/a1_cat_thief.jpg?raw=1',
+    street_names: [],
+    traits: ['blue', 'slinger', 'human', 'beast'],
+    active: ['Grand Heist', 'Attacks 4 times. Deals 180% damage per hit.\n\nHeal for 4755 damage dealt.'],
+    leader: '33% chance per Beast:\nConvert 🟡 shooter into an Explosive Shot.',
+    description: 'It is said that the Cat Witch only steals from the rich.'
+},
+{
+    name: 'Damien, Storm Templar',
+    url: 'https://www.dropbox.com/s/1so2u1908h3eenj/a1_damien.jpg?raw=1',
+    street_names: [],
+    traits: ['yellow', 'slinger', 'mechanical'],
+    active: ['Thunderstorm', 'Converts a shooter to Twin Lightning. Each Lightning converts 4 orbs to 🟡.'],
+    leader: 'Match 5🟡 in one shot:\nMechanical Attack x2.2.',
+    description: '- YOUR EYES ONLU -\nBattle output: 755%\nUnder prolonged use, subject reported memory impairment and hallucination.\n\nModel XI Status: FIELD-TEST'
+},
+{
+    name: 'Dynasty, Kira Celestial',
+    url: 'https://www.dropbox.com/s/lc2hrioreud32d8/a1_dynasty.jpg?raw=1',
+    street_names: [],
+    traits: ['blue', 'tactician', 'dragon'],
+    active: ['Longevity', 'Creates a bouncing seal that converts orbs to 🔵 on cast.'],
+    leader: 'Match 10🔵 in one shot:\n25% chance per Dragon to +1 shot next turn.',
+    description: 'Kings and Queens lust for Dynasty\'s blessing of eternal rule.'
+},
+{
+    name: 'Emareth, Keeper of Secrets',
+    url: 'https://www.dropbox.com/s/jpcnlz7bvfvr3x0/a1_emareth.jpg?raw=1',
+    street_names: [],
+    traits: ['green', 'tactician', 'dragon'],
+    active: ['Overgrowth', 'Converts the shooter Orb to a Seed Orb.\n\nSeed Orb grows vertically, converting up to 8 Orbs to 🟢.'],
+    leader: 'Match 5+🟢:\nDrops a 1.7x Attack Orb for every 2 Dragon.',
+    description: 'The curious Sinkaradu Serpents pride themselves in the poisonous ferns and fungi they grow and camouflages in.'
+},
+{
+    name: 'Fate, Greed Sin',
+    url: 'https://www.dropbox.com/s/04il4ndfiynmrn5/a1_fate.jpg?raw=1',
+    street_names: ['fate', 'greed', 'sin', 'dream', 'weaver', 'card', 'cards', 'magic', 'floating'],
+    traits: ['red', 'tactician', 'elf'],
+    active: ['Twisted Fate', 'The topmost 7🔵 cycle between 3 other colors.\n\n[+2 orbs per Elf]'],
+    leader: 'Match 8 Orbs of the same color, Elf Attack, Heal x2.7.',
+    description: '"Hopes and despairs? They are but a card in my hand."'
+},
+{
+    name: 'Kaeru, Oni Shogun',
+    url: 'https://www.dropbox.com/s/8t7djgr0he6b255/a1_kaeru.jpg?raw=1',
+    street_names: ['kaeru', 'oni', 'shogun', 'daimyo', 'frog'],
+    traits: ['yellow', 'tactician', 'demon'],
+    active: ['Kero Kero Ryu', 'Attacks 3 times for 200%⚔️ each.\n\nIn the next 1 turns, match 🟡 to attack 3 times again.'],
+    leader: 'On spell attack: Heal for 30%➕.',
+    description: 'Kaeru journeys to save his lost love who was turned into a princess.'
+},
+{
+    name: 'Kuroku, EVIL Mastermind',
+    url: 'https://www.dropbox.com/s/yy1cquknnhvtory/a1_kuroku.jpg?raw=1',
+    street_names: ['kuroku', 'evil', 'mastermind', 'pirate', 'plushie', 'stuffed', 'mouse', 'rabbit', 'rat', 'bunny'],
+    traits: ['blue', 'tactician', 'demon'],
+    active: ['Spool of EVIL', 'Shoot a chain of 10 Plushie Orbs.\n\nEach Plushie Orb will bounce on orbs 3 times and destroys the final orb it bounces on.'],
+    leader: 'On Board Reset:\nDemon Attack x2.7.',
+    description: '"The size of my EVIL will not be contained by this body!"'
+},
+{
+    name: 'Curator of 1st Branch',
+    url: 'https://www.dropbox.com/s/z72dtcusfrytx3u/a1_librarian.jpg?raw=1',
+    street_names: ['curator', 'of', 'the', 'first', '1st', 'branch', 'sergeant', 'helena', 'librarian'],
+    traits: ['red', 'tactician', 'human', 'maruu'],
+    active: ['Enigma Codex', 'Converts shooter orb to a Red Codex that passes through 20 Orbs.\n\nRed Codex shields player (48% Heal) for every 🔴 it passes through.'],
+    leader: 'Dispel Curse on spell cast.',
+    description: 'Dear Diary, today I come one step closer to decrypting the Ancient\'s history. Many texts reference Enigma. I believe it is the master codex.'
+},
+{
+    name: 'Pip, Headless Huntress',
+    url: 'https://www.dropbox.com/s/auqcjr508rdj5o3/a1_pip.jpg?raw=1',
+    street_names: ['pip', 'rider', 'headless', 'huntress', 'forlorn'],
+    traits: ['red', 'tactician', 'elemental'],
+    active: ['Huntress Lash', 'Attacks 3 times for 209% damage each.\n\n+1 attack for every 3 wall bounce this battle.'],
+    leader: '4 wall bounces in a turn:\n25% chance per Elemental or her sister to gain +1 shot next turn. (Once per turn)',
+    description: '"Forsake, forlorn, forgone. I chase a thief in endless nights."'
+},
+{
+    name: 'Poseiduess, Ocean\'s Wrath',
+    url: 'https://www.dropbox.com/s/rm99meshh7tedcz/a1_poseiduess.jpg?raw=1',
+    street_names: ['poseiduess', 'ocean', 'wrath', 'ocean\'s', 'sea', 'queen'],
+    traits: ['blue', 'runesmith', 'elemental'],
+    active: ['Deep Rising', 'Converts the shooter Orb to a Seed Orb.\n\nSeed Orb grows vertically, converting up to 8 Orbs to 🔵.'],
+    leader: 'Dispel Curse on spell cast.',
+    description: '"To War Sisters! Only War can avert a second man-cataclysm."'
+},
+{
+    name: 'Ragnarok, World Serpent',
+    url: 'https://www.dropbox.com/s/7wfe4jaipz4hkz0/a1_ragnarok.jpg?raw=1',
+    street_names: ['ragnarok', 'world', 'serpent', 'ancient'],
+    traits: ['green', 'slinger', 'dragon'],
+    active: ['Mirage', 'Converts 5 orbs to 🟢 that snakes around the board.\n\n+2🟢 per Dragon.'],
+    leader: 'Destroy 45 orbs in one turn:\nDragon Attack x3.7.',
+    description: 'When Good and Evil is One, an ancient hope is born.'
+},
+{
+    name: 'Sanduria, the Eclipse',
+    url: 'https://www.dropbox.com/s/d4wx3fmwiisixi9/a1_sanduria.jpg?raw=1',
+    street_names: ['sanduria', 'the', 'eclipse', 'dream', 'seal'],
+    traits: ['yellow', 'runesmith', 'beast'],
+    active: ['Broken Seal', 'Attacks all enemies for 370% damage, ignores Defense.\n\nCast every turn when HP < 35%.'],
+    leader: 'The first time you take lethal damage in a game, spawn 2 Attack Orbs per Beast instead. (x1.7⚔️ per orb)',
+    description: 'A broken seal, an endless night. Fractured hopes or sunken dreams? Ember greed weaves the end.'
+},
+{
+    name: 'Solavi, Radiant Phalanx',
+    url: 'https://www.dropbox.com/s/vor7tzpn84033o3/a1_solavi.jpg?raw=1',
+    street_names: ['solavi', 'radiant', 'phalanx', 'iron', 'fang'],
+    traits: ['yellow', 'slinger', 'elf'],
+    active: ['Radiant Phalanx', 'Fires a wave of 6 Phalanx Orbs. Each Phalanx Orb destroys 🔴 or 🟡 to attack for 55%⚔️.'],
+    leader: 'After 2 Elf spell casts:\nConverts 10 🟢 or 🔵 to 🟡.',
+    description: '"Illumia Solavi Rallo Illyana Vadosm"\nFor the FlameHeart, to purge this void, I offer my soul.'
+},
+{
+    name: 'Vanessa, Heartbreak Mesmerizer',
+    url: 'https://www.dropbox.com/s/nwmddobggelj76d/a1_vanessa.jpg?raw=1',
+    street_names: ['vanessa', 'heartbreak', 'mesmerizer', 'vocalist', 'singer', 'piano', 'beer'],
+    traits: ['green', 'tactician', 'human'],
+    active: ['Open Tap', 'Drops 3-5 Pint orbs, each heals for 90%➕.\n\nPick up all Pint orbs in one turn: Human heroes +280%⚔️.'],
+    leader: 'Prevent enemy healing.',
+    description: '[Hearbreak Salon]\bWhen your heart is broken, our bar is open!'
+},
+{
+    name: 'Voltra, Charged',
+    url: 'https://www.dropbox.com/s/0vx4y0u8oky2qtz/voltra.jpg?raw=1',
+    street_names: ['voltra', 'charged', 'stormhide', 'bug'],
+    traits: ['blue', 'runesmith', 'dragon'],
+    active: ['Static Shield', 'Shields for 35% Max Health.\n\nFor the next 2 turns, R heroes counter attacks for 100%⚔️.'],
+    leader: 'Dragon +50% Critical Chance (250%⚔️) when shielded.',
+    description: 'Hunted till the last of its kind, Voltra seeks vengeance upon the Winged Pike.'
 }
 ];
 exports.heroes = heroes;
