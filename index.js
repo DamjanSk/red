@@ -42,6 +42,7 @@ try {
 }
 
 client.login(process.env.BOT_TOKEN);
+console.log(process.env.BOT_TOKEN);
 client.once('ready', function () {
   console.log('Ready!');
 });
