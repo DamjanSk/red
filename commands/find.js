@@ -5,7 +5,7 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.refreshMessage = void 0;
+exports.getEmoji = exports.refreshMessage = void 0;
 
 var _toConsumableArray2 = _interopRequireDefault(require("@babel/runtime/helpers/toConsumableArray"));
 
@@ -117,6 +117,10 @@ var refreshMessage = function refreshMessage() {
 
   if (_data.data.find.page < 0) _data.data.find.page = 0;
   if (_data.data.find.page >= results.length) _data.data.find.page = results.length - 1;
+
+  var start = Math.floor(_data.data.find.page / _data.data.find.itemsPerPage) * _data.data.find.itemsPerPage;
+
+  var end = Math.min(start + _data.data.find.itemsPerPage, results.length);
   var exampleEmbed = {
     color: 0xEE1607,
     title: 'Search results',
@@ -124,10 +128,10 @@ var refreshMessage = function refreshMessage() {
     fields: [{
       name: "Showing ".concat(_data.data.find.page + 1, "/").concat(results.length),
       value: results.sort(function (hero1, hero2) {
-        return hero1.traits[0].localeCompare(hero2.traits[0]);
+        return hero1.traits[0].localeCompare(hero2.traits[0]) || hero1.traits[1].localeCompare(hero2.traits[1]);
       }).map(function (hero, index) {
-        return "".concat(index === _data.data.find.page ? '▫️' : '▪️', " ").concat(_data.data.colors[hero.traits[0]], " ").concat(hero.name);
-      }).join('\n')
+        return "".concat(index === _data.data.find.page ? '▫️' : '▪️', " ").concat(getEmoji(_data.data.colors[hero.traits[0]][hero.traits[1]]), " ").concat(hero.name);
+      }).slice(start, end).join('\n')
     }],
     image: {
       url: results[_data.data.find.page].url
@@ -144,3 +148,11 @@ var refreshMessage = function refreshMessage() {
 };
 
 exports.refreshMessage = refreshMessage;
+
+var getEmoji = function getEmoji(name) {
+  return _data.data.client.emojis.find(function (emoji) {
+    return emoji.name === name;
+  });
+};
+
+exports.getEmoji = getEmoji;

@@ -6,7 +6,8 @@ var _fs = require("fs");
 
 var _data = require("./commands/data.js");
 
-var client = new _discord.Client(); // Load commands.
+var client = new _discord.Client();
+_data.data.client = client; // Load commands.
 
 var commandFiles = (0, _fs.readdirSync)('./commands').filter(function (file) {
   return file.endsWith('.js');
@@ -40,7 +41,7 @@ try {
   }
 }
 
-client.login(process.env.BOT_TOKEN);
+client.login('NjY4MjMxMDMyMjAxNTQzNjg0.XiYd_w.3oRt8SWxiPbidpETbAGDbe8RVHo');
 client.once('ready', function () {
   console.log('Ready!');
 });
