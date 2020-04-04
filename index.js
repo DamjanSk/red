@@ -170,6 +170,7 @@ function () {
 
           case 12:
             // Update roles.
+            console.log('updating');
             guild = reaction.message.guild;
             role = guild.roles.find(function (role) {
               return role.name === _data.data.role.roles[reaction.emoji.name].roleName;
@@ -189,6 +190,7 @@ function () {
               if (reactorIds.some(function (id) {
                 return member.id === id;
               }) && member.id !== _data.data.selfId) {
+                console.log('adding role');
                 member.addRole(role);
               }
             };
