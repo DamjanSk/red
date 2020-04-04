@@ -137,6 +137,7 @@ function () {
 
     return _regenerator["default"].wrap(function _callee$(_context) {
       while (1) {
+        console.log(_context.next);
         switch (_context.prev = _context.next) {
           case 0:
             if (!reaction.partial) {
