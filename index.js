@@ -158,7 +158,7 @@ function () {
             return _context.abrupt("return");
 
           case 10:
-            if (!(reaction.message.id !== _data.data.role.messageId)) {
+            if (!(reaction.message.id !== '696089200809869393')) {
               _context.next = 12;
               break;
             }
