@@ -129,6 +129,7 @@ var countdown = function countdown() {
 var handleReaction =
 /*#__PURE__*/
 function () {
+  console.log('handling reaction');
   var _ref = (0, _asyncToGenerator2["default"])(
   /*#__PURE__*/
   _regenerator["default"].mark(function _callee(reaction, user) {
@@ -159,6 +160,8 @@ function () {
 
           case 10:
             if (!(reaction.message.id !== '696090627691249715')) {
+              console.log('reaction message id');
+              console.log(reaction.message.id);
               _context.next = 12;
               break;
             }
