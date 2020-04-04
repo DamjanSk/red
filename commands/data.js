@@ -43,6 +43,22 @@ var data = {
       'slinger': 'green_s',
       'runesmith': 'green_r'
     }
+  },
+  timer: {
+    timerChannelId: '695730441570877440',
+    messageChannelId: '695730441570877440',
+    times: [1585983600000, 1586001600000, 1586026800000, 1586044800000, 1586070000000, 1586088000000, 1586113200000, 1586131200000, 1586156400000, 1586174400000, 1586199600000, 1586217600000]
+  },
+  role: {
+    message: 'Tap the reactions to give yourself roles.',
+    messageId: '',
+    messageChannelId: '',
+    roles: {
+      '⌛': {
+        description: 'Timer role - Timer channel & notifications on map reset.',
+        roleName: 'timer'
+      }
+    }
   }
 };
 exports.data = data;

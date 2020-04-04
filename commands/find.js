@@ -15,8 +15,6 @@ var _asyncToGenerator2 = _interopRequireDefault(require("@babel/runtime/helpers/
 
 var _data = require("./data");
 
-var _discord = require("discord.js");
-
 module.exports = {
   name: 'find',
   description: 'Command for searching or filtering heroes.',
@@ -121,7 +119,7 @@ var refreshMessage = function refreshMessage() {
   var start = Math.floor(_data.data.find.page / _data.data.find.itemsPerPage) * _data.data.find.itemsPerPage;
 
   var end = Math.min(start + _data.data.find.itemsPerPage, results.length);
-  var exampleEmbed = {
+  var embed = {
     color: 0xEE1607,
     title: 'Search results',
     description: "".concat(_data.data.find.keywords.join(', ')),
@@ -143,7 +141,7 @@ var refreshMessage = function refreshMessage() {
   };
 
   _data.data.find.message.edit({
-    embed: exampleEmbed
+    embed: embed
   });
 };
 
