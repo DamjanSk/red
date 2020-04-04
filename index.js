@@ -47,7 +47,7 @@ try {
   }
 }
 
-client.login('NjY4MjMxMDMyMjAxNTQzNjg0.XmlgIQ.Wiu5Wh0xI1U4odOzp7p6-e8v5TU');
+client.login(process.env.BOT_TOKEN);
 client.once('ready', function () {
   console.log('Ready!');
   setInterval(countdown, 60000);
