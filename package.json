@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Bot for Lightslinger Heroes.",
   "main": "index.js",
-  "type": "module",
   "author": "Damjan Najdov",
   "license": "ISC",
   "devDependencies": {
