@@ -56,7 +56,7 @@ module.exports = {
     }
 
     message.reply(
-      "Skip to **floor ".concat(formatNumber(skip), "**\nBoss HP around ").concat(formatNumber(calculateHp(skip) * 3), ".\nStart 3x at floor ").concat(maxFloor2x, ".\nYou'll earn about ")).concat(formatNumber(points), " points.");
+      "Skip to **floor ".concat(formatNumber(skip), "**. Boss HP around ").concat(formatNumber(calculateHp(skip) * 3), ".\nStart 3x at floor ").concat(maxFloor2x, ".\nYou'll earn about ").concat(formatNumber(points), " points."));
   }
 };
 
