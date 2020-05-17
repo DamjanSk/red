@@ -12,21 +12,21 @@ module.exports = {
     }
 
     var emblems = 164;
-    var damage = parseInt(args[0]); // Find the last floor the player can beat with 2x in 3 turns.
+    var damage = parseInt(args[0]);
 
+    // Find the last floor the player can beat with 2x in 2 turns.
     var maxFloor2x = 0;
-
-    while (calculateHp(maxFloor2x) < damage / 2.0) {
+    while (calculateHp(maxFloor2x) < damage * 0.4) {
       maxFloor2x += 1;
-    } // Find the last floor the player can beat with 3x in 3 turns.
+    }
 
-
+    // Find the last floor the player can beat with 3x in 2 turns.
     var maxFloor3x = 0;
-
-    while (calculateHp(maxFloor3x) < damage) {
+    while (calculateHp(maxFloor3x) < damage * 0.8) {
       maxFloor3x += 1;
     }
 
+    // Find how far to skip.
     var num3xFloors = maxFloor3x - maxFloor2x;
     var num2xFloors = emblems - num3xFloors * 1.5;
     var startFloor = maxFloor2x - num2xFloors;
@@ -36,7 +36,27 @@ module.exports = {
       skip -= 40;
     }
 
-    message.reply("Skip to **floor ".concat(formatNumber(skip), "** (Boss HP around ").concat(formatNumber(calculateHp(skip) * 3), "). Start 3x at floor ").concat(maxFloor2x, "."));
+    // Find points earned.
+    var points = 0;
+    var remainingEmblems = emblems;
+    var floor = 0;
+    while (floor < skip) {
+      floor += 40;
+      points += caluclatePoints(floor);
+      remainingEmblems -= 2;
+    }
+    while (remainingEmblems >= 3) {
+      floor += 2;
+      points += caluclatePoints(floor);
+      if (floor <= maxFloor2x) {
+        remainingEmblems -= 2;
+      } else {
+        remainingEmblems -= 3;
+      }
+    }
+
+    message.reply(
+      "Skip to **floor ".concat(formatNumber(skip), "**\nBoss HP around ").concat(formatNumber(calculateHp(skip) * 3), ".\nStart 3x at floor ").concat(maxFloor2x, ".\nYou'll earn about ")).concat(formatNumber(points), " points.");
   }
 };
 
