@@ -47,7 +47,7 @@ module.exports = {
     }
     while (remainingEmblems >= 3) {
       floor += 2;
-      points += caluclatePoints(floor);
+      points += caluclatePoints(floor)/4;
       if (floor <= maxFloor2x) {
         remainingEmblems -= 2;
       } else {
