@@ -168,7 +168,7 @@ var heroes = [{
   name: 'Se\'ker, Sand Lord',
   url: 'https://www.dropbox.com/s/k22ajm4wc0vlgqn/se%27ker.jpg?raw=1',
   street_names: ['seker', 'se\'ker', 'unchained', 'sand'],
-  traits: ['yellow', 'tactician', 'mechanical', 'beast'],
+  traits: ['yellow', 'tactician', 'demon'],
   active: ['Undying Rage', 'Randomly converts all shooter orbs into Explosive Shot or 🌈'],
   leader: '',
   description: 'Sand Erases.\nSand Remembers.\nSand Never Dies.'

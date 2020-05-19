@@ -32,7 +32,7 @@ module.exports = {
               case 0:
                 // Setup global data.
                 _data.data.find.message = message;
-                _data.data.find.keywords = args;
+                _data.data.find.keywords = args.map(function(word) { return word.toLowerCase(); });
                 _data.data.find.page = 0;
                 refreshMessage(); // Create reactions.
 
